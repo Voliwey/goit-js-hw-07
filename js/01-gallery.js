@@ -3,7 +3,6 @@ import { galleryItems } from './gallery-items.js';
 
 const galleryContainer = document.querySelector(".gallery")
 
-const galleryEl = galleryItems
 
 function createMarkup(arr) {
     return arr.map(({ preview, original, description }) =>`
@@ -20,7 +19,7 @@ function createMarkup(arr) {
    
 }
 
-galleryContainer.insertAdjacentHTML('beforeend', createMarkup(galleryEl))
+galleryContainer.insertAdjacentHTML('beforeend', createMarkup(galleryItems))
 
 
 function openModal(evt) {
